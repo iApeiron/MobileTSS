@@ -35,8 +35,7 @@
 	return @[[NSPredicate predicateWithFormat:@"SELF MATCHES '.*(iPhone).*'"],
     	[NSPredicate predicateWithFormat:@"SELF MATCHES '.*(iPad).*'"],
     	[NSPredicate predicateWithFormat:@"SELF MATCHES '.*(iPod).*'"],
-    	[NSPredicate predicateWithFormat:@"SELF MATCHES '.*(AppleTV).*'"],
-    	nil]
+    	[NSPredicate predicateWithFormat:@"SELF MATCHES '.*(AppleTV).*'"]]
 }
 
 #pragma mark - Table view data source
