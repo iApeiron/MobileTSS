@@ -1,6 +1,6 @@
 ARCHS = armv7 arm64
 
-include theos/makefiles/common.mk
+include $(THEOS)/makefiles/common.mk
 
 APPLICATION_NAME = MobileTSS
 MobileTSS_FILES = main.m MTAppDelegate.m MTAllFirmwaresTableViewController.m MTMyDeviceTableViewController.m MTSearchTableViewController.m

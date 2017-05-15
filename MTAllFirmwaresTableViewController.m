@@ -15,7 +15,7 @@
 
     deviceNames = [[NSMutableArray alloc] init];
     jsonArray = [[NSMutableDictionary alloc] init];
-    
+
     NSError *err = NULL;
     jsonArray = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://api.ineal.me/tss/all"]] options:0 error:&err];
     if (err == nil) {
@@ -35,7 +35,7 @@
 	return @[[NSPredicate predicateWithFormat:@"SELF MATCHES '.*(iPhone).*'"],
     	[NSPredicate predicateWithFormat:@"SELF MATCHES '.*(iPad).*'"],
     	[NSPredicate predicateWithFormat:@"SELF MATCHES '.*(iPod).*'"],
-    	[NSPredicate predicateWithFormat:@"SELF MATCHES '.*(AppleTV).*'"]]
+    	[NSPredicate predicateWithFormat:@"SELF MATCHES '.*(AppleTV).*'"]];
 }
 
 #pragma mark - Table view data source
@@ -77,4 +77,3 @@
 }
 
 @end
-
